@@ -1,0 +1,113 @@
+.movie-details-modal--container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.movie-details-modal--wrapper {
+  background-color: white;
+  width: 80%;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.movie-details-modal--img > img {
+  width: 500px;
+}
+
+.movie-details--container {
+  height: 700.7px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.movie-details > div:first-child {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.movie-details > div:nth-child(2),
+.movie-details > div:nth-child(3) {
+  font-size: 25px;
+}
+
+.movie-details > div:last-child {
+  font-size: 30px;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000000;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 8px 15px;
+  width: 40%;
+}
+
+.modal-button > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .movie-details-modal--wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .movie-details-modal--img > img {
+    width: 300px;
+    height: 450px;
+    padding-top: 18px;
+  }
+  .movie-details--container {
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 18px;
+  }
+  .movie-details {
+    gap: 20px;
+    padding: 0 37px;
+  }
+  .movie-details > div:first-child {
+    font-size: 30px;
+  }
+  .movie-details > div:nth-child(2) {
+    font-size: 20px;
+  }
+  .movie-details--star-img {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .movie-details--star-img > img {
+    width: 22px;
+  }
+  .movie-details > div:last-child {
+    font-size: 17px;
+  }
+  .modal-button {
+    width: 75%;
+    align-self: center;
+  }
+}
